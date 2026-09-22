@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#154889"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:paddingTop="48dp"
+        android:paddingBottom="32dp">
+
+        <TextView
+            android:id="@+id/txtBanco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="BanCoppel"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="64dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="280dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="@drawable/fondo_tarjeta"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/txtBienvenida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Bienvenido, Vicente"
+                android:textColor="#111111"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/imgHuella"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="24dp"
+                android:contentDescription="Huella dactilar"
+                android:scaleType="fitCenter"
+                android:src="@drawable/huella" />
+
+            <TextView
+                android:id="@+id/txtEstado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Coloca tu dedo en el sensor\npara iniciar sesión."
+                android:textColor="#111111"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/scanButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:layout_marginTop="28dp"
+            android:backgroundTint="#F4D51C"
+            android:text="Ingresar"
+            android:textAllCaps="false"
+            android:textColor="#111111"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</ScrollView>
