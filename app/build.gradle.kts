@@ -8,6 +8,7 @@ android {
         version = release(36)
     }
 
+
     defaultConfig {
         applicationId = "com.example.identificadordactilar"
         minSdk = 26

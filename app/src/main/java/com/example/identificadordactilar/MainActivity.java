@@ -177,6 +177,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+
     private void mostrarError(String mensaje) {
         txtEstado.setText(mensaje);
         imgHuella.setImageResource(R.drawable.ic_error);
